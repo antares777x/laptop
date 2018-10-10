@@ -1,13 +1,19 @@
-!!! urzvt customization
-!!! enable extensions; no spaces between them
-!URxvt.perl-ext-common: extension_name_1,extension_name_2,etc
+! urxvt config
 
-!!! testing out different fonts and decreasing the spacing
+! extensions
+URxvt.perl-ext-common: default,matcher,clipboard
+URxvt.url-launcher: firefox
+URxvt.matcher.button: 1
+
+! testing out different fonts and decreasing the spacing
 URxvt.font: xft:xos4 Terminus:pixelsize=16
 URxvt.letterSpace: 0
 
-!!! set up the colors
-!!! first line normal, second line bright
+! special colors; commented out for now
+! test replacing "URxvt" with "*" and see if the code still works
+URxvt.foreground:  #AAAAAA
+URxvt.background:  #000000
+!URxvt.cursorColor: 
 ! black
 URxvt*color0:  #000000
 URxvt*color8:  #555555
@@ -33,28 +39,18 @@ URxvt*color14: #00FFFF
 URxvt*color7:  #AAAAAA
 URxvt*color15: #FFFFFF
 
-!!! determine the background color and text color
-URxvt.foreground: #AAAAAA
-!URxvt.cursorColor: 
-URxvt.background: #000000
-
-!!! disable the scroll bar
+! disable the scroll bar
 URxvt*scrollBar: false
 
-!!! specify colors for italics and bold
+! specify colors for italics and bold
 !URxvt.colorBD: white
 !URxvt.colorIT: green
 
-!!! do not scroll with output
+! do not scroll with output
 !URxvt*scrollTtyOutput: false
 
-!!! scroll in relation to buffer (with mouse scroll or Shift+PageUp)
+! scroll in relation to buffer (with mouse scroll or Shift+PageUp)
 !URxvt*scrollWithBuffer: true
 
 !!! scroll back to the bottom on keypress
 !URxvt*scrollTtyKeypress: true
-
-!!! make urls in the terminal clickable and enable the clipboard function
-URxvt.perl-ext-common: default,matcher,clipboard
-URxvt.url-launcher: firefox
-URxvt.matcher.button: 1
