@@ -1,5 +1,5 @@
 # initialize X resource database if file is present on system
-[[ -f ~/.config/.Xresources ]] && xrdb -merge -I$HOME ~/.config/.Xresources
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
 # set up autocutsel so you can copypaste into terminal
 autocutsel -fork &
