@@ -5,4 +5,6 @@ I'm just learning the finer details of linux, so this will be a work in progress
 
 As I go, I'll probably discover new packages and new programs that I'll want to try out, so I'll need to create backups and more config files for more programs.
 
-GitHub wants me to add a .gitignore file and a license.  I'll do that later when I know more about what I'm doing.
+GitHub wants me to add a .gitignore file and a license.
+
+Also looking to add scripts for maintaining/modifying my MTG cube, which is currently on Cube Cobra and locally as an Excel file.  Could use Python + VBA to streamline modifying the Cube Cobra list, and look at data more closely on a per-card basis.
